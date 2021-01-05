@@ -62,7 +62,7 @@ const Icon = ({condition}) => {
       icon = foggy;
       break;
   }
-  ;
+
 
   return (
       <Icon src={icon} alt="Weather-img"/>

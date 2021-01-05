@@ -1,13 +1,14 @@
 import './App.css';
-import Component from './components/WeatherCard/component';
-import WeatherCard from './components/WeatherCard/component';
+import {useState, useEffect} from 'react';
+
+import WeatherEngine from './components/WeatherEngine'
 
 function App() {
   return (
       <div className="App">
-        <WeatherCard temp={-5} condition={'Clear'} city={'Sydney'} country={'AU'}/>
-        <WeatherCard temp={15} condition={'Clouds'} city={'Melbourne'} country={'AU'}/>
-        <WeatherCard temp={35} condition={'Dust'} city={'London'} country={'GB'}/>
+        <WeatherEngine location={'Sydney, au'}/>
+        <WeatherEngine location={'taipei, tw'}/>
+        <WeatherEngine location={'Espoo, FI'}/>
       </div>
   );
 }
